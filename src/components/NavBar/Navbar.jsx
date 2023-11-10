@@ -16,7 +16,7 @@ const Navbar = () => {
       </div>
       <button className="desktopMenuButton">
         <ChatBubbleOutlineIcon/>
-        Contact Me
+        &nbsp; Contact Me
       </button>
     </nav>
   );

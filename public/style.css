@@ -7,8 +7,9 @@
 }
 
 body{
-    background: rgb(30,30,30);
+    background: #0f1931;
     color: white;
     overflow: hidden;
     overflow-y: scroll;
+    font-family: 'Roboto Slab', serif, sans-serif;
 }
