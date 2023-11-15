@@ -42,7 +42,8 @@
 }
 
 .skillBar:hover {
-  box-shadow: 0 0 20px #4c6ab0;
+  /* box-shadow: 0 0 20px #4c6ab0; */
+  box-shadow: 5px 5px 10px #f4b268;
 }
 
 .skillBarImg {
