@@ -1,5 +1,5 @@
 #works {
-    margin: 0 auto;
+    margin: 6rem auto;
     min-height: calc(100vh - 4rem);
     width: 100vw;
     max-width: 60rem;
@@ -20,6 +20,7 @@
     font-weight: 300;
     font-size: 1rem;
     max-width: 45rem;
+    margin: 1rem;
 }
 
 .worksImgs {

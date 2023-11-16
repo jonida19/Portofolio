@@ -49,3 +49,47 @@
 .desktopMenuButton:hover{
     box-shadow: 0 0 20px #f4b268;
 }
+
+.active {
+    color:#f4b268;
+    padding-bottom: 0.5rem;
+    border-bottom: 3px solid #f4b268;
+}
+
+.mobMenu {
+    display: none !important;
+    object-fit: cover;
+    height: 1.8rem;
+}
+
+.navMenu {
+    position: absolute;
+    top: 4rem;
+    right: 2rem;
+    z-index: 2;
+    display: flex;
+    flex-direction: column;
+    padding: 0.5rem;
+    height: fit-content;
+    min-width: 15rem;
+    background: #1c2b4d;
+}
+
+.listItem {
+    color: white;
+    padding: 0.5rem 3rem;
+    margin: 0.25rem;
+    background: #0f1931;
+}
+
+@media screen and (max-width: 720px) {
+    .mobMenu {
+        display: flex !important;
+    }
+    .desktopMenu {
+        display: none;
+    }
+    .desktopMenuButton {
+        display: none;
+    }  
+}
