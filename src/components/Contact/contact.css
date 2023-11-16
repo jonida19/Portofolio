@@ -1,0 +1,82 @@
+#contactPage {
+    min-height: calc(100vh - 4rem);
+    width: 100vw;
+    max-width: 60rem;
+    margin: 0 auto;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.contactPageTitle {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+}
+
+.contactDesc {
+    padding: 1rem;
+    font-size: medium;
+    font-weight: 300;
+}
+
+.contactForm {
+    margin: 1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 90vw;
+    max-width: 60rem;
+}
+
+.name, .email, .msg {
+    font-size: medium;
+    width: 100%;
+    max-width: 40rem;
+    margin: 0.5rem;
+    padding: 0.5rem 1rem;
+    border: none;
+    font-weight: 600;
+    border-radius: 0.5rem;
+    background: #bfd4f5;
+    outline: none;
+    transition: border-color 0.3s ease-in-out;
+}
+
+.name:focus, .email:focus, .msg:focus {
+    box-shadow: 0 0 20px #f4b268;
+}
+
+
+.submitBtn {
+    border: none;
+    height: 3rem;
+    background: white;
+    color: black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0 1rem;
+    border-radius: 0.5rem;
+    transition: box-shadow 0.3s;
+    font-weight: 600;
+    font-size: 1.05rem;
+    margin: 2rem;
+}
+
+.submitBtn:hover{
+    box-shadow: 0 0 15px #f4b268;
+}
+
+.links {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.link {
+    object-fit: cover;
+    margin: 0 0.75rem;
+}
+
