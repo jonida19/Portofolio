@@ -1,6 +1,6 @@
 import React from "react";
 import "./introduction.css";
-import foto from "../../assets/on_the_keyboard.PNG";
+import foto from "../../assets/on_the_keyboard.png";
 import ArticleIcon from '@mui/icons-material/Article';
 
 const Introduction = () => {
