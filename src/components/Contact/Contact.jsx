@@ -10,12 +10,12 @@ const Contact = () => {
     e.preventDefault();
 
     emailjs
-      .sendForm(
-        "service_number",
-        "template_number",
-        form.current,
-        "public_key"   //public key
-      )
+    .sendForm(
+      "service_mmtzkwb",
+      "template_kpj9a13",
+      form.current,
+      "X8xmX5nqlhwFu_KEJ"   //public key
+    )
       .then(
         (result) => {
           console.log(result.text);
