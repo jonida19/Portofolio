@@ -11,10 +11,10 @@ const Contact = () => {
 
     emailjs
       .sendForm(
-        "your service key",
-        "your template key",
+        "service_number",
+        "template_number",
         form.current,
-        "your public key"   //public key
+        "public_key"   //public key
       )
       .then(
         (result) => {
@@ -48,8 +48,8 @@ const Contact = () => {
         </button>
         <div className="links">
           {/* the social media icons */}
-          <LinkedInIcon className="link" />
-          <GitHubIcon className="link" />
+          <a className="socialMedia" href="https://www.linkedin.com/in/jonida-durbaku/" target="_blank" rel="noopener noreferrer"><div className="icondiv"><LinkedInIcon className="link" /></div></a>
+          <a className="socialMedia" href="https://github.com/jonida19" target="_blank" rel="noopener noreferrer"><GitHubIcon className="link" /></a>
         </div>
       </form>
     </section>

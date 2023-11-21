@@ -80,3 +80,11 @@
     margin: 0 0.75rem;
 }
 
+.socialMedia {
+    color: white;
+    text-decoration: none;
+}
+
+.socialMedia:active {
+    color: #f4b268;
+}
