@@ -1,7 +1,7 @@
 import React from "react";
 import "./skills.css";
 import UIDesign from "../../assets/ui_ux.png";
-import WebDesign from "../../assets/web_design.png";
+import WebDesign from "../../assets/ui_ux.png";
 import FullStack from "../../assets/full_stack.png";
 
 const Skills = () => {
