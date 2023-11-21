@@ -10,7 +10,7 @@ const Introduction = () => {
         <span className="hello">Hello, </span>
         <span className="introText">I am <span className="introName">Jonida </span><span className="title"><br/>Full Stack Web Developer</span></span>
         <p className="introPara">High Level Experience in web design <br/>and development knowledge, producing quality work.</p>
-        <a href="Jonida_Durbaku_Resume.pdf" download="Jonida_Durbaku_Resume.pdf">
+        <a href="/Jonida_Durbaku_Resume.pdf" download="Jonida_Durbaku_Resume.pdf">
         <button className="btn"><ArticleIcon/> &nbsp; Resume</button>
         </a> 
       </div>
