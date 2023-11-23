@@ -23,40 +23,69 @@
     margin: 1rem;
 }
 
-.worksImgs {
+.projectCard {
+    border: 2px solid #473e66;
+    border-radius: 1rem;
+    text-align: center;
+    margin: 1rem;
     display: flex;
+    flex-direction: column;
     align-items: center;
-    justify-content: center;
-    flex-wrap: wrap;
-    width: 100vw;
-    max-width: 65rem;
-}
-
-.worksImg {
+  }
+  
+  .projectImg {
+    border-radius: 1rem 1rem 0 0;
     object-fit: cover;
     height: 20rem;
-    margin: 0.5rem;
-}
-
-.workBtn {
-    border: none;
-    height: 3rem;
-    background: white;
-    color: black;
+    margin-bottom: 1rem;
+  }
+  
+  .projectTitle {
+    font-size: 1.5rem;
+    margin-bottom: 0.5rem;
+  }
+  
+  .projectDesc {
+    font-weight: 300;
+    font-size: 1rem;
+    max-width: 20rem;
+    margin: 0 auto;
+  }
+  
+  .projectButtons {
+    display: flex;
+    justify-content: space-between; 
+    width: 100%; 
+    margin-top: auto;
+  }
+  
+  .projectButton {
+    height: 2rem;
+    background: none;
+    border-color: white;
+    color: white;
     display: flex;
     align-items: center;
     justify-content: center;
-    padding: 0.5rem 2.5rem;
-    margin: 3rem 0;
-    border-radius: 2rem;
+    padding: 0.5rem 0.8rem;
+    border-radius: 0.5rem;
     transition: box-shadow 0.3s;
     font-weight: 600;
-    font-size: 1.05rem;
-}
+    font-size: 0.7rem;
+    margin: 1rem;
+  }
+  
+  .projectButton:hover {
+    box-shadow: 0 0 15px #f1916d;
+  }
 
-.workBtn:hover{
-    box-shadow: 0 0 10px #f4b268;
-}
+
+  .worksCards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  
 
 @media screen and (max-width: 585px) {
     .worksImg {
@@ -64,3 +93,10 @@
     }
     
 }
+
+  @media screen and (max-width: 585px) {
+    .projectImg {
+      height: 48vw;
+    }
+  }
+  

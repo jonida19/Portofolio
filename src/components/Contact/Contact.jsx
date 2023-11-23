@@ -14,7 +14,7 @@ const Contact = () => {
       "service_mmtzkwb",
       "template_kpj9a13",
       form.current,
-      "X8xmX5nqlhwFu_KEJ"   //public key
+      "X8xmX5nqlhwFu_KEJ"
     )
       .then(
         (result) => {
@@ -47,7 +47,6 @@ const Contact = () => {
           Submit
         </button>
         <div className="links">
-          {/* the social media icons */}
           <a className="socialMedia" href="https://www.linkedin.com/in/jonida-durbaku/" target="_blank" rel="noopener noreferrer"><div className="icondiv"><LinkedInIcon className="link" /></div></a>
           <a className="socialMedia" href="https://github.com/jonida19" target="_blank" rel="noopener noreferrer"><GitHubIcon className="link" /></a>
         </div>
