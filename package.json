@@ -31,9 +31,6 @@
     "web-vitals": "^2.1.4",
     "workbox-background-sync": "^6.6.0"
   },
-  "devDependencies": {
-    "@babel/plugin-proposal-private-property-in-object": "^1.0.0"
-  },
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
@@ -57,5 +54,8 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
+  },
+  "devDependencies": {
+    "@babel/plugin-proposal-private-property-in-object": "^7.21.11"
   }
 }
