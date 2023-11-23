@@ -1,6 +1,6 @@
 import React, {useState} from "react";
 import "./navbar.css";
-import logo from '../../assets/jd_logo.png';
+import logo from '../../assets/logo_orange.png';
 import {Link} from 'react-scroll';
 import ChatBubbleOutlineIcon from '@mui/icons-material/ChatBubbleOutline';
 import MenuIcon from '@mui/icons-material/Menu';

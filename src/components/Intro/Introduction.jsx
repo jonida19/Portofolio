@@ -1,6 +1,6 @@
 import React from "react";
 import "./introduction.css";
-import foto from "../../assets/jonida.png";
+import foto from "../../assets/jonida_circle.png";
 import ArticleIcon from '@mui/icons-material/Article';
 
 const Introduction = () => {

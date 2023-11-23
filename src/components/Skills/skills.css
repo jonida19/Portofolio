@@ -36,14 +36,14 @@
   margin: 1rem;
   padding: 1.5rem 2rem;
   border-radius: 0.5rem;
-  background-color: #1c2b4d;
+  background-color: #1b3358;
   transition: box-shadow 0.3s ease-in-out;
-  box-shadow: 0 0 10px #1c2b4d;
+  box-shadow: 0 0 10px #473e66;
 }
 
 .skillBar:hover {
   /* box-shadow: 0 0 20px #4c6ab0; */
-  box-shadow: 5px 5px 10px #f4b268;
+  box-shadow: 5px 5px 10px #f1916d;
 }
 
 .skillBarImg {

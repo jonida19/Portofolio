@@ -1,5 +1,5 @@
 .navbar {
-    background-color: #0f1931;
+    background-color: #06142e;
     height: 6rem;
     width: 100vw;  /*viewing-width */
     max-width: 75rem;
@@ -15,8 +15,8 @@
 
 .logo {
     object-fit: cover; /*maintain a ratio of the image*/
-    height: 8rem;
-    width: 8rem;
+    height: 3rem;
+    width: 3rem;
 }
 
 .desktopMenuListItem {
@@ -26,9 +26,9 @@
 }
 
 .desktopMenuListItem:hover {
-    color: #f4b268;
+    color: #f1916d;
     padding-bottom: 0.5rem;
-    border-bottom: 3px solid #f4b268;
+    border-bottom: 3px solid #f1916d;
 }
 
 .desktopMenuButton {
@@ -47,13 +47,13 @@
 }
 
 .desktopMenuButton:hover{
-    box-shadow: 0 0 20px #f4b268;
+    box-shadow: 0 0 20px #f1916d;
 }
 
 .active {
-    color:#f4b268;
+    color:#f1916d;
     padding-bottom: 0.5rem;
-    border-bottom: 3px solid #f4b268;
+    border-bottom: 3px solid #f1916d;
 }
 
 .mobMenu {
@@ -72,14 +72,14 @@
     padding: 0.5rem;
     height: fit-content;
     min-width: 15rem;
-    background: #1c2b4d;
+    background: #06142e;
 }
 
 .listItem {
     color: white;
     padding: 0.5rem 3rem;
     margin: 0.25rem;
-    background: #0f1931;
+    background: #06142e;
 }
 
 @media screen and (max-width: 720px) {
@@ -91,5 +91,21 @@
     }
     .desktopMenuButton {
         display: none;
+    }  
+
+}
+
+@media screen and (min-width: 721px) {
+    .mobMenu {
+        display: none !important;
+    }
+    .navMenu {
+        display: none !important; 
+    }
+    .desktopMenu {
+        display: flex;
+    }
+    .desktopMenuButton {
+        display: flex;
     }  
 }
