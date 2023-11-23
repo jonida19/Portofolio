@@ -46,7 +46,7 @@
 }
 
 .name:focus, .email:focus, .msg:focus {
-    box-shadow: 0 0 20px #f1916d;
+    box-shadow: 0 0 20px #f1916d; 
 }
 
 
