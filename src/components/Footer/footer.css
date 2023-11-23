@@ -1,11 +1,10 @@
 .footer {
     width: 100vw;
     height: 4rem;
-    background: #06142e;
+    background: #1c2b4d;
     display: flex;
     align-items: center;
     justify-content: center;
     font-weight: 300;
     font-size: small;
 }
-
