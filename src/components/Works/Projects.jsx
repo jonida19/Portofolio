@@ -1,30 +1,67 @@
-import React from "react";
+import React, { useState } from 'react';
+import { Button, Dialog, DialogTitle, DialogContent, DialogActions } from '@mui/material';
 import "../Works/projects.css";
 import stayTuned from "../../assets/stayTuned.jpg";
 import LaunchIcon from '@mui/icons-material/Launch';
 import GitHubIcon from '@mui/icons-material/GitHub';
+import ReadMoreIcon from '@mui/icons-material/ReadMore';
 
-const ProjectCard = ({ image, title, description, link, github }) => (
-  <div className="projectCard">
-    <img src={image} alt="" className="projectImg" />
-    <h3 className="projectTitle">{title}</h3>
-    <p className="projectDesc">{description}</p>
-    <div className="projectButtons">
-    <button
-      className="projectButton"
-      onClick={() => window.open(link, "_blank")}
-    >
-      Live Demo &nbsp; <LaunchIcon/>
-    </button>
-    <button
-      className="projectButton"
-      onClick={() => window.open(github, "_blank")}
-    >
-     <GitHubIcon/>&nbsp;  View source
-    </button>
+const ProjectCard = ({ image, title, description, link, github, projectDesc }) => {
+  const [modalOpen, setModalOpen] = useState(false);
+
+  const handleModalOpen = () => {
+    setModalOpen(true);
+  };
+
+  const handleModalClose = () => {
+    setModalOpen(false);
+  };
+
+  return (
+    <div className="projectCard">
+      <img src={image} alt="" className="projectImg" />
+      <h3 className="projectTitle">{title}</h3>
+      <p className="projectDesc">{description}</p>
+      <div className="projectButtons">
+        <button
+          className="projectButton"
+          onClick={() => window.open(link, "_blank")}
+        >
+          Demo &nbsp; <LaunchIcon />
+        </button>
+        <button
+          className="projectButton"
+          onClick={handleModalOpen}
+        >
+          Info &nbsp;<ReadMoreIcon />
+        </button>
+        <button
+          className="projectButton"
+          onClick={() => window.open(github, "_blank")}
+        >
+          <GitHubIcon />&nbsp;  Source
+        </button>
+      </div>
+
+      <Dialog
+        open={modalOpen}
+        onClose={handleModalClose}
+        maxWidth="md"
+        fullWidth
+      >
+        <DialogTitle>{title}</DialogTitle>
+        <DialogContent>
+          <p>{projectDesc}</p>
+        </DialogContent>
+        <DialogActions>
+          <Button onClick={handleModalClose} variant="contained" color="primary">
+            Close
+          </Button>
+        </DialogActions>
+      </Dialog>
     </div>
-  </div>
-);
+  );
+};
 
 const Projects = () => {
   const projectData = [
@@ -34,6 +71,7 @@ const Projects = () => {
       description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
       link: "https://www.nuorder.shop/",
       github: "https://github.com/jonida19/ReactDemoPrototype",
+      projectDesc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
     },
     {
       image: stayTuned,
@@ -41,6 +79,7 @@ const Projects = () => {
       description: "Different description for Project 2.",
       link: "/project2",
       github: "/github2",
+      projectDesc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
     },
     {
       image: stayTuned,
@@ -48,6 +87,7 @@ const Projects = () => {
       description: "Another unique description for Project 3.",
       link: "/project3",
       github: "/github3",
+      projectDesc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
     },
     {
       image: stayTuned,
@@ -55,6 +95,7 @@ const Projects = () => {
       description: "A distinct description for Project 4.",
       link: "/project4",
       github: "/github4",
+      projectDesc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
     },
   ];
 
