@@ -22,6 +22,7 @@ const Introduction = () => {
         <a
           href="/Jonida_Durbaku_Resume.pdf"
           target="_blank"
+          download="Jonida_Durbaku_Resume.pdf"
           rel="noopener noreferrer"
         >
           <button className="btn">
