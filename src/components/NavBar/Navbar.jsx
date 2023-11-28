@@ -14,7 +14,7 @@ const Navbar = () => {
         <Link activeClass="active" to="intro" spy={true} smooth={true} offset={-100} duration={500}  className="desktopMenuListItem">Home</Link>
         <Link activeClass="active" to="skills" spy={true} smooth={true} offset={-100} duration={500} className="desktopMenuListItem">About</Link>
         <Link activeClass="active" to="works" spy={true} smooth={true} offset={-100} duration={500} className="desktopMenuListItem">Portofolio</Link>
-        <Link activeClass="active" to="contactPage" spy={true} smooth={true} offset={-100} duration={500} className="desktopMenuListItem">Blog</Link>
+        {/* <Link activeClass="active" to="contactPage" spy={true} smooth={true} offset={-100} duration={500} className="desktopMenuListItem">Blog</Link> */}
       </div>
       <button className="desktopMenuButton" onClick={() =>
       document.getElementById("contactPage").scrollIntoView({behavior: "smooth"})}>
@@ -27,7 +27,7 @@ const Navbar = () => {
         <Link activeClass="active" to="intro" spy={true} smooth={true} offset={-100} duration={500}  className="listItem"  onClick={() => setShowMenu(false)}>Home</Link>
         <Link activeClass="active" to="skills" spy={true} smooth={true} offset={-100} duration={500} className="listItem" onClick={() => setShowMenu(false)}>About</Link>
         <Link activeClass="active" to="works" spy={true} smooth={true} offset={-100} duration={500} className="listItem" onClick={() => setShowMenu(false)}>Portofolio</Link>
-        <Link activeClass="active" to="contactPage" spy={true} smooth={true} offset={-100} duration={500} className="listItem" onClick={() => setShowMenu(false)}>Blog</Link>
+        {/* <Link activeClass="active" to="contactPage" spy={true} smooth={true} offset={-100} duration={500} className="listItem" onClick={() => setShowMenu(false)}>Blog</Link> */}
         <Link activeClass="active" to="contactPage" spy={true} smooth={true} offset={-100} duration={500} className="listItem" onClick={() => setShowMenu(false)}>Contact Me</Link>
       </div>
     </nav>

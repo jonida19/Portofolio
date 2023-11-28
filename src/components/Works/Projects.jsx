@@ -1,12 +1,25 @@
-import React, { useState } from 'react';
-import { Button, Dialog, DialogTitle, DialogContent, DialogActions } from '@mui/material';
+import React, { useState } from "react";
+import {
+  Button,
+  Dialog,
+  DialogTitle,
+  DialogContent,
+  DialogActions,
+} from "@mui/material";
 import "../Works/projects.css";
 import stayTuned from "../../assets/stayTuned.jpg";
-import LaunchIcon from '@mui/icons-material/Launch';
-import GitHubIcon from '@mui/icons-material/GitHub';
-import ReadMoreIcon from '@mui/icons-material/ReadMore';
+import LaunchIcon from "@mui/icons-material/Launch";
+import GitHubIcon from "@mui/icons-material/GitHub";
+import ReadMoreIcon from "@mui/icons-material/ReadMore";
 
-const ProjectCard = ({ image, title, description, link, github, projectDesc }) => {
+const ProjectCard = ({
+  image,
+  title,
+  description,
+  link,
+  github,
+  projectDesc,
+}) => {
   const [modalOpen, setModalOpen] = useState(false);
 
   const handleModalOpen = () => {
@@ -27,34 +40,43 @@ const ProjectCard = ({ image, title, description, link, github, projectDesc }) =
           className="projectButton"
           onClick={() => window.open(link, "_blank")}
         >
-          Demo &nbsp; <LaunchIcon />
+          Demo &nbsp; <LaunchIcon className="project_icon" />
         </button>
-        <button
-          className="projectButton"
-          onClick={handleModalOpen}
-        >
-          Info &nbsp;<ReadMoreIcon />
+        <button className="projectButton" onClick={handleModalOpen}>
+          Info &nbsp;
+          <ReadMoreIcon className="project_icon" />
         </button>
         <button
           className="projectButton"
           onClick={() => window.open(github, "_blank")}
         >
-          <GitHubIcon />&nbsp;  Source
+          <GitHubIcon className="project_icon" />
+          &nbsp;&nbsp; Source
         </button>
       </div>
 
       <Dialog
+        className="projectModal"
         open={modalOpen}
         onClose={handleModalClose}
-        maxWidth="md"
+        maxWidth="sm"
         fullWidth
+        PaperProps={{
+          style: {
+            backgroundColor: "#1b3358",
+          },
+        }}
       >
-        <DialogTitle>{title}</DialogTitle>
-        <DialogContent>
+        <DialogTitle className="dialog-title">{title}</DialogTitle>
+        <DialogContent className="dialog-content">
           <p>{projectDesc}</p>
         </DialogContent>
         <DialogActions>
-          <Button onClick={handleModalClose} variant="contained" color="primary">
+          <Button
+            onClick={handleModalClose}
+            variant="contained"
+            color="primary"
+          >
             Close
           </Button>
         </DialogActions>
@@ -68,10 +90,11 @@ const Projects = () => {
     {
       image: stayTuned,
       title: "NuOrder",
-      description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+      description: "Restaurant Ordering Website",
       link: "https://www.nuorder.shop/",
       github: "https://github.com/jonida19/ReactDemoPrototype",
-      projectDesc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+      projectDesc:
+        "Simplifying Online Ordering for Local Restaurants. NuOrder takes a restauranteur step by step in setting up their own restaurant page to be featured on the NuOrder site. ",
     },
     {
       image: stayTuned,

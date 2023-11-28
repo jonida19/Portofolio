@@ -63,19 +63,20 @@
 
 @media screen and (max-width: 720px) {
   .skillBarText > p {
-    font-size: 2vw;
+    font-size: 2.5vw;
   }
 }
 
-@media screen and (max-width: 480px) {
+ /*mobile devices break points*/
+@media screen and (max-width: 585px) {
   .skillBars {
     flex-direction: column;
-    align-items: center; /* Center items for smaller screens */
+    align-items: center; 
   }
 
   .skillBar {
     flex-direction: column;
-    align-items: center; /* Center items for smaller screens */
+    align-items: center; 
   }
 
   .skillBarImg {

@@ -23,6 +23,13 @@
   margin: 1rem;
 }
 
+.worksCards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 2rem 0;
+  }
+
 .projectCard {
   background-color: #1b3358;
   transition: box-shadow 0.3s ease-in-out;
@@ -42,8 +49,9 @@
 .projectImg {
   border-radius: 1rem 1rem 0 0;
   object-fit: cover;
-  height: 22rem;
+  height: 15rem;
   margin-bottom: 1rem;
+  width: 100%;
 }
 
 .projectTitle {
@@ -67,6 +75,7 @@
 
 .projectButton {
   height: 2rem;
+  width: 7.2rem;
   flex: 1;
   background: none;
   border-color: white;
@@ -78,30 +87,94 @@
   border-radius: 0.5rem;
   transition: box-shadow 0.3s;
   font-weight: 600;
-  font-size: 0.99rem;
+  font-size: 0.9rem;
   margin: 0.8rem;
+  flex-direction: row;
+  text-align: center;
 }
 
 .projectButton:hover {
-  box-shadow: 0 0 15px #f1916d;
+  box-shadow: 0 0 15px #bd83b8;
 }
 
-.worksCards {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  margin: 2rem 0;
+.project_icon {
+    width: 1.09rem !important;
+    margin-right: 0.3rem;
+  }
+
+.dialog-title {
+    color: white;
+    justify-content: center;
 }
 
+.dialog-content {
+    color: white;
+}
+
+  /*mobile devices break points*/
 @media screen and (max-width: 585px) {
   .projectImg {
     height: 48vw;
+    width: 100%;
+  }
+
+  .projectButton {
+    font-size: 0.6rem;
+    margin: 0.5rem;
+    padding: 0.7rem 0.8rem;
+  }
+
+  .project_icon {
+    width: 0.9rem !important;
+    height: 0.9rem !important;
+    margin-right: 0.3rem;
   }
 }
 
-@media screen and (max-width: 570px) {
-  .projectImg {
-    width: 100%;
-    margin-bottom: 0;
+
+  /*tablets break points*/
+  @media screen and (max-width: 680px) {
+    .projectImg {
+      height: 48vw;
+      width: 100%;
+    }
+  
+    .projectButton {
+      font-size: 0.8rem;
+      margin: 0.5rem;
+      padding: 0.7rem 0.8rem;
+    }
+  
+    .project_icon {
+      width: 1rem !important;
+      height: 1rem !important;
+      margin-right: 0.3rem;
+    }
   }
-}
+
+  /*Smaller devices*/
+@media screen and (max-width: 320px) { 
+    .projectImg {
+        height: 48vw;
+        width: 100%;
+      }
+
+      .projectCard {
+        width: 75%;
+        flex-direction: column;
+        align-items: center; 
+        margin: 1rem auto;
+      }
+
+      .projectButton {
+        font-size: 0.5rem;
+        margin: 0.5rem;
+        padding: 0.7rem 0.8rem;
+      }
+
+      .project_icon {
+        width: 0.77rem !important;
+        height: 0.77rem !important;
+        margin-right: 0.2rem;
+      }
+}  
