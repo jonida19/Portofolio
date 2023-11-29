@@ -11,7 +11,6 @@
     position: absolute;
     top: 1rem;
     right: 0;
-    z-index: -1;
     object-fit: cover;
     height: 60vh;
 }
@@ -33,7 +32,7 @@
 }
 
 .introName {
-    color: #f1916d; 
+    color: var(--secondary-text); 
 }
 
 .title {
@@ -47,12 +46,12 @@
 }
 
 .btn {
-    border: 2px solid #473e66;
-    box-shadow: 0 0 10px #473e66;
+    border: 2px solid var(--borders);
+    box-shadow: 0 0 10px var(--secondary-box-shadow);
     height: 3rem;
     margin: 1rem 0;
-    background: white;
-    color: black;
+    background: var(--button-background);
+    color: var(--button-text-color);
     display: flex;
     align-items: center;
     justify-content: center;
@@ -64,14 +63,12 @@
 }
 
 .btn:hover {
-    box-shadow: 0 0 15px #f1916d;
+    box-shadow: 0 0 15px var(--shadow-buttons);
 }
 
-/*Resume */
-.pdf-viewer {
-    margin-top: 20px;
-    text-align: center;
-  }
+.resume-icon {
+    background-color: var(--button-background);
+}
   
 /*writing media queries to make the components responsible */
 @media screen and (max-width: 840px) {

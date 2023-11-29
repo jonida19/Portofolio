@@ -46,16 +46,16 @@
 }
 
 .name:focus, .email:focus, .msg:focus {
-    box-shadow: 0 0 20px #f1916d; 
+    box-shadow: 0 0 20px var(--shadow-buttons); 
 }
 
 
 .submitBtn {
-    border: 2px solid #473e66;
-    box-shadow: 0 0 10px #473e66;
+    border: 2px solid var(--secondary-box-shadow);
+    box-shadow: 0 0 10px var(--secondary-box-shadow);
     height: 3rem;
-    background: white;
-    color: black;
+    background: var(--button-background);
+    color: var(--button-text-color);
     display: flex;
     align-items: center;
     justify-content: center;
@@ -69,7 +69,7 @@
 
 
 .submitBtn:hover{
-    box-shadow: 0 0 15px #f1916d;
+    box-shadow: 0 0 15px var(--shadow-buttons);
 }
 
 .links {
@@ -88,5 +88,5 @@
 }
 
 .socialMedia:active {
-    color: #f1916d;
+    color: var(--shadow-buttons);
 }

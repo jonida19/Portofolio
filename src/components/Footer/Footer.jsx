@@ -11,7 +11,7 @@ const Footer = () => {
   }, []);
   return (
     <footer className='footer'> 
-      Built from scratch with &nbsp;<FavoriteIcon/> &nbsp;&nbsp;
+      Built from scratch with &nbsp;<FavoriteIcon className='heart-icon'/> &nbsp;&nbsp;
       &#169; Copyright {currentYear} Jonida Durbaku. All rights reserved.
     </footer>
   )

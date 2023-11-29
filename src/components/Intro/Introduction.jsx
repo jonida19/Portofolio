@@ -26,7 +26,7 @@ const Introduction = () => {
           rel="noopener noreferrer"
         >
           <button className="btn">
-            <ArticleIcon /> &nbsp; Resume
+            <ArticleIcon className="resume-icon"/> &nbsp; Resume
           </button>
         </a>
       </div>

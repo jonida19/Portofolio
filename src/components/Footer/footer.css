@@ -1,10 +1,14 @@
 .footer {
     width: 100vw;
     height: 4rem;
-    background: #1c2b4d;
+    background: var(--footer-background);
     display: flex;
     align-items: center;
     justify-content: center;
     font-weight: 300;
     font-size: small;
+}
+
+.heart-icon {
+    background-color: var(--footer-background);
 }

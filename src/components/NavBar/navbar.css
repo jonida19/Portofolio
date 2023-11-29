@@ -1,5 +1,5 @@
 .navbar {
-    background-color: #06142e;
+    background-color: var(--background);
     height: 6rem;
     width: 100vw;  /*viewing-width */
     max-width: 75rem;
@@ -14,7 +14,7 @@
 }
 
 .logo {
-    object-fit: cover; /*maintain a ratio of the image*/
+    object-fit: cover;
     height: 3rem;
     width: 3rem;
 }
@@ -26,17 +26,17 @@
 }
 
 .desktopMenuListItem:hover {
-    color: #f1916d;
+    color: var(--shadow-buttons);
     padding-bottom: 0.5rem;
-    border-bottom: 3px solid #f1916d;
+    border-bottom: 3px solid var(--shadow-buttons);
 }
 
 .desktopMenuButton {
-    border: 2px solid #473e66;
-    box-shadow: 0 0 10px #473e66;
+    border: 2px solid var(--borders);
+    box-shadow: 0 0 10px var(--secondary-box-shadow);
     height: 3rem;
-    background: white;
-    color: black;
+    background: var(--button-background);
+    color: var(--button-text-color);
     display: flex;
     align-items: center;
     justify-content: center;
@@ -48,13 +48,18 @@
 }
 
 .desktopMenuButton:hover{
-    box-shadow: 0 0 20px #f1916d;
+    box-shadow: 0 0 20px var(--shadow-buttons);
+    cursor: pointer;
 }
 
 .active {
-    color:#f1916d;
+    color: var(--secondary-text);
     padding-bottom: 0.5rem;
-    border-bottom: 3px solid #f1916d;
+    border-bottom: 3px solid var(--secondary-text);
+}
+
+.chat-icon {
+    background-color: var(--button-background);
 }
 
 .mobMenu {
@@ -73,14 +78,21 @@
     padding: 0.5rem;
     height: fit-content;
     min-width: 15rem;
-    background: #06142e;
+    background: var(--background);
+    border: 1px solid var(--borders);
+    box-shadow: 0 0 8px var(--borders);
 }
 
 .listItem {
-    color: white;
+    color: var(--text-primary);
     padding: 0.5rem 3rem;
     margin: 0.25rem;
-    background: #06142e;
+    background: var(--background);
+    cursor: pointer;
+}
+
+.modeType {
+    cursor: pointer;
 }
 
 @media screen and (max-width: 720px) {
